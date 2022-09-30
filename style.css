@@ -45,6 +45,11 @@ img {
   border-radius: 0.5rem;
   font-family: "Inter", sans-serif;
   max-height: 27.875rem;
+  transition: all 0.5s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 .left {
@@ -61,6 +66,13 @@ img {
 mark {
   color: var(--soft-violet);
   background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+mark:hover {
+  font-size: 2.2rem;
+  cursor: pointer;
+  filter: brightness(1.4);
 }
 
 .description {
@@ -110,8 +122,12 @@ mark {
   inset: 0;
   background-color: var(--soft-violet);
   mix-blend-mode: multiply;
+  transition: all 0.3s ease;
 }
 
+.overlay:hover {
+  background-color: transparent;
+}
 
 @media only screen and (max-width: 1100px) {
   body {
